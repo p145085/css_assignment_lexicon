@@ -1,0 +1,97 @@
+html *
+{
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: sans-serif !important;
+}
+#loginFloat{
+    float: right;
+}
+#subText{
+    background-color: chocolate;
+    margin:50px;
+}
+#sideContent{
+    background-color: chartreuse;
+    margin:50px;
+}
+#art1 {
+    background-color:darkred;
+    margin:50px;
+    width:240px;
+}
+#art2{
+    background-color: darkmagenta;
+    margin:50px;
+    width:240px;
+}
+.header{
+    grid-area: header;
+    background-color: aqua;
+    width:320px;
+    margin:50px;
+}
+.footer{
+    grid-area: footer;
+    background-color: aquamarine;
+}
+.left{
+    grid-area: left;
+    background-color: cornflowerblue;
+}
+.right{
+    grid-area: right;
+    background-color: cadetblue;
+}
+.menu{
+    grid-area: menu;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+a{
+    background-color: #dddddd;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'menu header header header header header'
+    'left left left left right right'
+    'footer footer footer footer footer footer'
+    ;
+}
+.grid-leftAndRight{
+    display: grid;
+    grid-template-areas: 
+    'left left left right right right'
+    ;
+}
+.grid-container > div{
+    text-align: center;
+    padding: 20px 0;
+}
+body{
+    width: 1024px;
+    margin:auto;
+}
